@@ -1,6 +1,6 @@
 package com.datastructure.linkedlist;
 
-public class Node<Integar> {
+public class Node{
     public Node next;
     private int number;
 
