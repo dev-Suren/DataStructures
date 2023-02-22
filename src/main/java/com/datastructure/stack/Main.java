@@ -30,9 +30,15 @@ public class Main {
                 System.out.println(customStackLinkedList.isEmpty());
                 customStackLinkedList.push(24);
                 customStackLinkedList.push(44);
+                System.out.println("-------------------------");
                 System.out.println(customStackLinkedList.peek());
+                System.out.println("-------------------------");
                 System.out.println(customStackLinkedList.pop());
+                System.out.println("-------------------------");
                 System.out.println(customStackLinkedList.peek());
+                System.out.println("-------------------------");
+                System.out.println(customStackLinkedList.isEmpty());
+
                 break;
 
         }

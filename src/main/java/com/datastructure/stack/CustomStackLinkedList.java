@@ -3,7 +3,7 @@ package com.datastructure.stack;
 public class CustomStackLinkedList {
     private class Node{
         private int value;
-        Node next;
+        public Node next;
 
         public Node( int value){
             this.value = value;
@@ -16,8 +16,8 @@ public class CustomStackLinkedList {
 
 
     }
-    private Node head;
-    private Node tail;
+     Node head;
+     Node tail;
     private int ptr=0;
 
 
@@ -28,24 +28,20 @@ public class CustomStackLinkedList {
         if(tail == null){
             tail = head;
         }
-        head.next = node;
+        node.next = head;
         head = node;
         ptr++;
     }
 
     public int pop(){
-        Node temp = head;
-        while(temp.next != tail){
-            temp = temp.next;
-        }
-        int values = tail.value;
-        tail = temp.next;
+        int values = head.value;
+        head = head.next;
         ptr --;
         return values;
     }
 
     public int peek(){
-        return tail.getValue();
+        return head.getValue();
     }
 
     public boolean isEmpty(){
