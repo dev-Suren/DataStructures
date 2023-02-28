@@ -38,7 +38,7 @@ public class QuickSort {
         int[] arr = new int[1000];
         int i=0;
         while(i <arr.length){
-            arr[i]= random.nextInt(1000);
+            arr[i]= random.nextInt(100);
             i++;
         }
 
